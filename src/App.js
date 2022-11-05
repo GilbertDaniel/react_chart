@@ -3,6 +3,7 @@ import './App.css';
 import BarChart from './components/BarChart';
 import DoughnutChart from './components/DoughnutChart';
 import LineChart from './components/LineChart';
+import PieChart from './components/PieChart';
 
 function App() {
   var data = {
@@ -46,6 +47,7 @@ var options = {
       <BarChart data={data} options={options}/>
       <DoughnutChart data={data} options={options}/>
       <LineChart data={data} options={options}/>
+      <PieChart data={data} options={options}/>
 
     </div>
   );
