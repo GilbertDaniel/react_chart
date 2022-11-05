@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import BarChart from './components/BarChart';
+import DoughnutChart from './components/DoughnutChart';
 
 function App() {
   var data = {
@@ -29,7 +30,7 @@ function App() {
 }
 
 var options = {
-    maintainAspectRatio: true,
+    maintainAspectRatio: false,
     scales: {
     },
     legend: {
@@ -42,6 +43,8 @@ var options = {
     <div className="App">
       <h1>Data Visualization with React and Chart.js</h1>
       <BarChart data={data} options={options}/>
+      <DoughnutChart data={data} options={options}/>
+
     </div>
   );
 }
