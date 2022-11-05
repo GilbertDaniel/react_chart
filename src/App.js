@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import BarChart from './components/BarChart';
 import DoughnutChart from './components/DoughnutChart';
+import LineChart from './components/LineChart';
 
 function App() {
   var data = {
@@ -44,6 +45,7 @@ var options = {
       <h1>Data Visualization with React and Chart.js</h1>
       <BarChart data={data} options={options}/>
       <DoughnutChart data={data} options={options}/>
+      <LineChart data={data} options={options}/>
 
     </div>
   );
